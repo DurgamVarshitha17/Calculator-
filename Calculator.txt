@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    char op;
+    double p, q, res;
+   cout << "Enter an operator (+, -, *, /): ";
+   cin >> op;
+   cout << "Enter two numbers: ";
+    cin >> p >> q;
+    switch (op) 
+    {
+    case '+':
+        cout<<p<<"+"<<q<<"="<<p+q;
+        break;
+    case '-':
+        cout<<p<<"-"<<q<<"="<<p-q;
+        break;
+    case '*':
+        cout<<p<<"*"<<q<<"="<<p*q;
+        break;
+    case '/':
+        cout<<p<<"/"<<q<<"="<<p/q;
+        break;
+default:
+ cout << "Error! Operator is not correct";
+    }
+}
